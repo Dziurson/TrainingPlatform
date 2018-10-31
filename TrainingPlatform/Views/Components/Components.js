@@ -1,8 +1,11 @@
 import Vue from 'vue'
 
-new Vue({
-  el: '#app',
-  data: {
-    msg: 'Hello from Vue!'
-  }
+export const exampleComponent = Vue.component('example-component', {
+  template: require('./Templates/TemplateExample.html'),
+  props: ['text'],
+  data: function () {
+    return {
+      count: 0
+    }
+  },  
 })
