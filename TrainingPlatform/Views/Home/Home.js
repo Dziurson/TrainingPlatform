@@ -1,5 +1,5 @@
-import Vue from 'vue'
-import { exampleComponent } from '../Components/Components'
+import Vue from 'vue';
+import { exampleComponent } from '../Components/Components';
 
 new Vue({
   el: '#app',
@@ -9,4 +9,4 @@ new Vue({
   data: {
     msg: 'Hello from Vue!'
   }
-})
+});

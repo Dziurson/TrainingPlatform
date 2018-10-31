@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import Vue from 'vue';
 
 export const exampleComponent = Vue.component('example-component', {
   template: require('./Templates/TemplateExample.html'),
@@ -6,6 +6,6 @@ export const exampleComponent = Vue.component('example-component', {
   data: function () {
     return {
       count: 0
-    }
-  },  
-})
+    };
+  }
+});
