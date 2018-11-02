@@ -7,6 +7,6 @@ new Vue({
     'example-component': exampleComponent
   },
   data: {
-    msg: 'Hello from Vue!'
+    
   }
 });
