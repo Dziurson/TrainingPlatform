@@ -70,7 +70,8 @@ module.exports = {
     overlay: true,
     proxy: {
       '*': {
-        target: 'http://localhost:50190/',
+        target: 'https://localhost:44368/',
+        secure: false,
         changeOrigin: true
       }
     }

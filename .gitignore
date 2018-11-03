@@ -266,3 +266,4 @@ __pycache__/
 /TrainingPlatform/package-lock.json
 /TrainingPlatform/Views/Account.js
 /TrainingPlatform/Views/Account.js.map
+/TrainingPlatform/ApiKeys.config

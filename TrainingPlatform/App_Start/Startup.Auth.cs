@@ -3,6 +3,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
+using Microsoft.Owin.Security.Google;
 using Owin;
 using TrainingPlatform.Models;
 
@@ -57,11 +58,11 @@ namespace TrainingPlatform
       //   appId: "",
       //   appSecret: "");
 
-      //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-      //{
-      //    ClientId = "",
-      //    ClientSecret = ""
-      //});
+      app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+      {
+        ClientId = System.Configuration.ConfigurationManager.AppSettings["GoogleClientID"],
+        ClientSecret = System.Configuration.ConfigurationManager.AppSettings["GoogleClientSecret"]
+      });
     }
   }
 }
