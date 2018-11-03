@@ -54,9 +54,9 @@ namespace TrainingPlatform
       //   consumerKey: "",
       //   consumerSecret: "");
 
-      //app.UseFacebookAuthentication(
-      //   appId: "",
-      //   appSecret: "");
+      app.UseFacebookAuthentication(
+         appId: System.Configuration.ConfigurationManager.AppSettings["FacebookAppID"],
+         appSecret: System.Configuration.ConfigurationManager.AppSettings["FacebookAppSecret"]);
 
       app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
       {
